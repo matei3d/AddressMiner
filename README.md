@@ -8,7 +8,7 @@ Primarily by giving users the ability to quickly generate Ethereum wallets with 
 ### Venv
 This suite currently uses venv with the web3.py and eth_account plugins.
 
-To activate: navigate to the project's root and run the venv script at ./venv/Scripts/activate
+To activate: navigate to the project's root and run the venv script at ```./venv/Scripts/activate```
 
 ### wallet_mine.py
 ```python wallet_mine.py [-h] [-t THREADS] [-n ITERATIONS] target```
@@ -32,3 +32,18 @@ Outputs one random Ethereum private/address keypair.
 
 ### simple_transact.py
 ```python simple_transact.py```
+
+Simple transact currently has everything done from variables in the script. Will be adding arguments soon.
+
+For the time being, please fill in the following fields.
+
+With an RPC key taken from your own private node or from your infura account:
+```rpc_url = "https://ropsten.infura.io/v3/<your_infura_API_Key>"```
+
+With a private key / public address pair of a valid Ethereum wallet:
+```
+private_key_from = "0xPRIVATE_key_Example"
+public_key_from = "0xPUBLIC_key_example
+```
+
+#### The best is yet to come.
