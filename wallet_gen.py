@@ -1,6 +1,6 @@
 from eth_account import Account
 
-extra_entropy = 'Hail Putler'
+extra_entropy = '1337'
 
 def generateAddress():
     act = Account.create(extra_entropy)

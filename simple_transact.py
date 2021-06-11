@@ -2,7 +2,9 @@ from web3 import Web3
 import math
 
 # Initialize Connection to Blockchain
-rpc_url = "https://ropsten.infura.io/v3/07bcd7ea355f472ab79d13d551c18a05"
+rpc_url = "https://ropsten.infura.io/v3/<your_infura_API_Key>"
+
+# Web3 provider
 web3 = Web3(Web3.HTTPProvider(rpc_url))
 
 # Keys
