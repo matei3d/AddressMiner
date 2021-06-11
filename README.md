@@ -23,7 +23,7 @@ will generate wallets starting with "0xABC" that you can read in the ABCwallets.
 --help: 
 ```
 positional arguments:
-  target                wallet address hex value you want from left to right. each digit exponentially more expensive
+  target                public address hex value you want. each digit exponentially more expensive to compute
 
 optional arguments:
   -h, --help            show this help message and exit

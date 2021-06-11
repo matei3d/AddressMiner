@@ -21,7 +21,7 @@ def run(iterations, threadNum, target):
 # Parse input arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("target", type=str, nargs='?', default="0x",
-help="wallet address hex value you want from left to right. each digit exponentially more expensive")
+help="public address hex value you want. each digit exponentially more expensive to compute")
 parser.add_argument("-t", "--threads", type=int,
 help="the number of parallel I/O threads to open")
 parser.add_argument("-n", "--iterations", type=int,
