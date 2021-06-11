@@ -20,7 +20,9 @@ Results can be piped or routed to a file,
 eg: ```python wallet_mine.py -n 100 "0xABC" > ./Data/ABCwallets.txt```
 will generate wallets starting with "0xABC" that you can read in the ABCwallets.txt file.
 
-```positional arguments:
+--help: 
+```
+positional arguments:
   target                wallet address hex value you want from left to right. each digit exponentially more expensive
 
 optional arguments:
@@ -28,7 +30,8 @@ optional arguments:
   -t THREADS, --threads THREADS
                         the number of parallel I/O threads to open
   -n ITERATIONS, --iterations ITERATIONS
-                        the number of max iterations each thread should go through```
+                        the number of max iterations each thread should go through
+```
 
 ### wallet_gen.py
 ```python wallet_gen.py```
