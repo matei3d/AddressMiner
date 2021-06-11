@@ -20,7 +20,7 @@ def run(iterations, threadNum, target):
 
 # Parse input arguments
 parser = argparse.ArgumentParser()
-parser.add_argument("target", type=str,
+parser.add_argument("target", type=str, nargs='?', default="0x",
 help="wallet address hex value you want from left to right. each digit exponentially more expensive")
 parser.add_argument("-t", "--threads", type=int,
 help="the number of parallel I/O threads to open")
@@ -34,7 +34,8 @@ if args.threads is not None:
     num_threads = args.threads
 #print(num_threads)
 
-iterations = 22**(len(args.target)-2) + 22 #22 cause the hex chars are case sensitive (a != A)
+#iterations = 22**(len(args.target)-2) + 22 #22 cause the hex chars are case sensitive (a != A)
+iterations = 10     # 10 loops per thread by default
 if args.iterations is not None:
     iterations = args.iterations
 #print(iterations)

@@ -11,9 +11,14 @@ This suite currently uses venv with the web3.py and eth_account plugins.
 To activate: navigate to the project's root and run the venv script at ```./venv/Scripts/activate```
 
 ### wallet_mine.py
-```python wallet_mine.py [-h] [-t THREADS] [-n ITERATIONS] target```
+```python wallet_mine.py [-h] [-t THREADS (default 1)] [-n ITERATIONS (default 10)] target```
 
 Outputs a series of Ethereum private/address keypair.
+
+Results can be piped or routed to a file, 
+
+eg: ```python wallet_mine.py -n 100 "0xABC" > ./Data/ABCwallets.txt```
+will generate wallets starting with "0xABC" that you can read in the ABCwallets.txt file.
 
 positional arguments:
   target                wallet address hex value you want from left to right. each digit exponentially more expensive
