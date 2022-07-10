@@ -1,3 +1,5 @@
+# This project is deprecated
+
 # AddressMiner
 ## Purpose
 The goal of this is to provide a small suite of python utilities for interacting with the Ethereum blockchain.
